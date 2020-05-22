@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intergenerational Educational Mobility by Race and Gender</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Intergenerational Educational Mobility by Race and Gender</h1>
+      <div class="introduction">
+        <p>
+          Follow the lives of&nbsp;
+          <select
+            name="category-0"
+            id="category-select-0"
+            class="select-css category-select category-0"
+          ></select>
+          &nbsp;and&nbsp;
+          <select
+            name="category-1"
+            id="category-select-1"
+            class="select-css category-select category-1"
+          ></select>
+          &nbsp;from their parents' educational attainment to their own
+          educational attainment.
+        </p>
+      </div>
+      <div class="chart-wrapper"></div>
+      <ul class="source">
+        <li>
+          Data source:
+          <a href="https://opportunityinsights.org/">Opportunity Insight</a>
+          <a
+            href="https://opportunityinsights.org/wp-content/uploads/2019/08/table_7.csv"
+            >Intergenerational Transition Matrices of Educational Attainment by
+            Race and Gender</a
+          >
+        </li>
+        <li>
+          Visualization inspiration:
+          <a
+            href="https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html"
+            >Extensive Data Shows Punishing Reach of Racism for Black Boys</a
+          >
+        </li>
+        <li>
+          Code inspiration:
+          <a href="https://observablehq.com/@chekos/animated-sankey"
+            >Animated Sankey</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-random.v2.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
